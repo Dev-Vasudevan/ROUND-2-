@@ -1,0 +1,96 @@
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script type="application/javascript">
+        function checkdata()
+        {
+           var uname= document.getElementByID("username");
+           var pw= document.getElementByID("password");
+           if (uname.value=="")
+           {
+            console.log("You have not entered anythig for username!");
+            username.focus();
+            return false;
+           }
+           if (pw.value=="")
+           {
+            alert("You have not entered anythig for password!");
+            password.focus();
+            return flase;
+           }
+           return true;
+        }
+    </script>
+    <title>Login</title>
+    <link rel="stylesheet" href = "C:\Users\avina\OneDrive\Desktop\Round 2\login_design.css">
+</head>
+  
+<body style="text-align:center;" id="body"; background="https://wallpapercave.com/wp/wp5889862.jpg" >
+    <section id="home">
+    <left><h1 id="heading" style="font-size: 50px; color:red"><b><u>ANDP</u></b></h1></left>
+    
+    <br><BR><BR><br><BR><BR><br><BR><BR><br><BR><BR>
+    <center><table style="background-color: rgb(204, 199, 199);">
+        <th>
+            Welcome to AND Publications
+        </th>
+        <tr>
+            <td>
+                <center>Sign into exisiting account</center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset id = "login">
+        
+                    <form id = "f1"  onsubmit="return checkdata()">
+                    <!-- Label for Temperature input -->
+                    <label for="username">Username:</label> 
+                    <input type="text" id="username"> <br/></br>
+                    <label for="password">Password:</label> 
+                    <input type="password" id="password"> <br/><br/>
+            
+                    
+                    <button><a href="C:\Users\Dev Vasudevan\Desktop\hackathon\Home page.html">Submit</a></button>
+                    <input type="reset" value="reset"><br/>
+                </form>
+                </fieldset>
+                <div id = "colour"><h6 style="color:red"><b>Click to change color</h6></b>
+        
+                    <button type="button" onclick="changecolor()">
+                        Color
+                    </button></div>
+            </td>
+        </tr>
+    </table></center></section>
+    
+    <script>
+        function changecolor()
+        {
+            // Generating random color each time
+            var color = "#"+(Math.random()*16777215|0).toString(16);
+              
+            $("table").css("background-color",color);
+        }
+
+        function checkdata()
+        {
+           var uname= document.getElementByID("username");
+           var pw= document.getElementByID("password");
+           if (uname.value=="")
+           {
+            alert("You have not entered anythig for username!");
+            username.focus();
+            return false;
+           }
+           if (pw.value=="")
+           {
+            alert("You have not entered anythig for password!");
+            password.focus();
+            return flase;
+           }
+           return true;
+        }
+    </script>
+</body>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="C:\Users\Dev Vasudevan\Desktop\hackathon\Home page.css">
+        <title>AND PUBLICATIONS|Politics</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+    </head>
+    <body>
+        <header>
+        
+            <u>ANDP</u>
+        
+        </header>
+        <section class="settings_button">
+                
+                <form>
+                    <select name="Settings" id="set" style="font-size: 55%;border-radius: 20px;border-color: blue;border-width: 1px;padding: .5%">
+                        <option value="Settings">Settings</option>
+                      <option value="Account details">Account details</option>
+                      <option value="Language">Language</option>
+                      <option value="Dark Mode">Dark Mode</option>
+                      <option value="Articles read">Articles read</option>
+                      <option value="Bookmarked">Bookmarked</option>
+                      <option value="Read list">Read list</option>                     
+                
+                    </select>
+               </form>
+              <button><a href="C:\Users\Dev Vasudevan\Desktop\hackathon\LOGIN.html">Logout</a></button>
+              <div id = "colour"><p style="font-size: 20px; color:red">Change color</p>
+        
+                <button type="button" onclick="changecolor()">
+                    Color
+                </button></div>
+        </section>
+        <br><br><br><br>
+        <nav >
+            <table  style="width:100%">
+                <th width=><button class="Navigation"><a href="C:\Users\Dev Vasudevan\Desktop\hackathon\Home page.html" style="color:white"> POLITICAL     </a> </button></th>
+                <th><button class="Navigation"><a href="C:\Users\Dev Vasudevan\Desktop\hackathon\SPORTS.html"  style="color: white"> SPORTS     </a> </button></th>
+                <th><button class="Navigation"><a href="C:\Users\Dev Vasudevan\Desktop\hackathon\SPORTS.html" style="color: white;"> INTERNATIONAL    </a> </button></th>
+            
+            
+            
+            </table>
+        </nav>
+        <br>
+        <div class="political">
+            <section id="Sharad">
+                    <figure class="images">
+                        <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2022/11/07/f820575219df2d7755e4c35402bbc782166782105129027_original.jpg" height="320px" width="350px">
+                    </figure>
+                    <a href="C:\Users\Dev Vasudevan\Desktop\hackathon\Sharad pavaar.html" style="color: black;">EC decision on Shiv ena: NCP chiefSharad Pawar ask' ally Uddhav to accept it,<br> take new symbol</a>
+                    <p style="font-size:20px;">Published on 19/02/23</p>
+                <br><br><br><br><br><br><br>
+            <hr color=black>
+            </section>
+
+            <section id="East">
+                <figure class="images">
+                    <img src="https://www.hindustantimes.com/ht-img/img/2023/02/19/550x309/ANI-20230125225-0_1676805398354_1676805398354_1676805431138_1676805431138.jpg" height="315px" width="350px">
+                </figure>
+                <a href="C:\Users\Dev Vasudevan\Desktop\hackathon\East.html" style="color: black;">Political parties kick start campaigning for Erode East by-election</a>
+                <p style="font-size: 22px;">Published on 19/02/23</p>
+                <br><br><br><br><br><br><br><br>
+        <hr color=black>
+        </section>
+        <section id="AAP">
+            <figure class="images">
+                <img src="https://images.livemint.com/img/2023/02/09/600x338/Delhi-BJP_1675925578112_1675925591597_1675925591597.jpg" height="315px" width="350px">
+            </figure>
+            <a href="C:\Users\Dev Vasudevan\Desktop\hackathon\AAP.html" style="color: black;">Kejriwal govt battles CBI's political swooping charge,<br> AAP says "Its not us"</a>
+            <p style="font-size: 22px;">Published on 19/02/23</p>
+            <br><br><br><br><br><br><br>
+    <hr color=black>
+    </section>    
+        </div>
+
+        <script>
+            function changecolor()
+            {
+                // Generating random color each time
+                var color = "#"+(Math.random()*16777215|0).toString(16);
+                  
+                $("body").css("background-color",color);
+            }
+            </script>
+    </body>
+    
+
+</html>
